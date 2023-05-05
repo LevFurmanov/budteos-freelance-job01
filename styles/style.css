@@ -8,6 +8,7 @@ body{
 .info-section{
     margin: 0;
     padding-top: 5px;
+    padding-bottom: 2vh;
 }
 
 .header-container{
@@ -21,6 +22,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 .header-info{
     display: flex;
@@ -28,11 +30,12 @@ body{
     list-style: none;
     font-weight: 400;
     font-style: normal;
+    margin-left: 30%;
 }
 
 .header-logo{
     margin-top: auto;
-    margin-left: 10px;
+    margin-left: 2em;
 }
 
 .header-info>li>a{
@@ -45,8 +48,8 @@ body{
 }
 
 .header-tel{
-    margin-right: 26px;
-    margin-left: 3px;
+    margin-right: 2%;
+    line-height: 18px;
 }
 .header-tel>li{
     list-style: none;
@@ -57,14 +60,51 @@ body{
     color: #131312;
 }   
 
+.under-header{
+    display: flex;
+    padding-left: 3vh;
+}
+.column{
+    flex: 50%;
+}
+    
+
+.left-section-header{
+    flex: 50%;
+}
+
+.header-btn{
+    width: 252px;
+    height: 52px;
+    color: #FFFFFF;
+    background-color: #131312;
+    box-shadow: 3.30492px 3.30492px 6.60984px rgba(0, 0, 0, 0.1), 3.30492px 3.30492px 6.60984px rgba(0, 0, 0, 0.1), inset 0px 3.30492px 3.30492px rgba(0, 0, 0, 0.25), inset 0px 3.30492px 3.30492px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin-top: 4em;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 3em;
+}
 
 h1{
     color: white;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 69px;
 }
 
-h2{
+.text{
     color: white;
 }
+
 span{
-    color: black;
+    color: #1F1D1D;
+}
+
+
+/*OUR FEATURES*/
+
+.our-features{
+    width: 100%;
+    background-color: #131312;
 }
