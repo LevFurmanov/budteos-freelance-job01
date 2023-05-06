@@ -10,6 +10,9 @@ button{
 li{
     list-style: none;
 }
+*{
+    font-family: 'Roboto', sans-serif;
+}
 
 /*HEADER*/ 
 
@@ -41,6 +44,7 @@ li{
     margin-left: 30%;
 }
 
+
 .header-logo{
     margin-top: auto;
     margin-left: 2em;
@@ -49,6 +53,10 @@ li{
 
 .header-info>li>a{
     text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.0692px;
+    line-height: 1.1;
     color: #131312;
 }
 
@@ -59,6 +67,10 @@ li{
 .header-tel{
     margin-right: 3%;
     line-height: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.0692px;
+    line-height: 21px;
 }
 .header-tel>li{
     list-style: none;
@@ -212,7 +224,7 @@ span{
     line-height: 0.1;
     text-transform: lowercase;
     color: #FFFFFF;
-    text-overflow: wrap;
+    text-overflow: scroll;
 }
 
 .features-btn{
@@ -280,4 +292,130 @@ hr{
     line-height: 38px;
     text-align: center;
     text-transform: lowercase;
+}
+
+/*COLLABORATIONS*/
+
+.collabs{
+    background-color: #EDCA17;
+    text-align: center;
+    margin-top: -3vh;
+    padding-top: 50px;
+    width: 100%;
+}
+.h2-colab{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #131312;
+}
+.collaborations{
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-collapse: separate;
+    overflow: hidden;
+}
+
+td{
+    border: solid 3px #000;
+}
+
+tr:first-child td:first-child{border-top-left-radius: 20px;}
+tr:first-child td:last-child{border-top-right-radius: 20px;}
+tr:last-child td:first-child{border-bottom-left-radius: 20px;}
+tr:last-child td:last-child{border-bottom-right-radius: 20px;}
+
+/* td, tr{
+    border: 2px solid #131312;
+    text-align: center;
+} */
+
+h4{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: lowercase;
+    color: #131312;
+}
+
+.corner{
+    border-top-left-radius: 25px;
+}
+
+.des{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: lowercase;
+    color: #131312;
+    margin-top: -10px;
+}
+
+.our-projects{
+    background-color: #EDCA17;
+    padding-top: 50px;
+}
+
+.wrapper{
+    background: no-repeat left 0 url(../images/curved-lines-yel.png);
+    background-color: #131312;
+    border-radius: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 1000px;
+}
+
+.wrap-img{
+    width: 100%;
+    text-align: center;
+}
+
+.wrap-text{
+    text-align: center;
+    width: 100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.slot1{
+    left: 10vh;
+    top: 50px;
+}
+
+.slot2{
+    top: -100px;
+    right: -50vh;
+}
+
+.slot3{
+    top: 1150px;
+    right: 54%;
+}
+
+.slot4{
+    top: 120px;
+    margin-left: 63%;
+}
+
+.slot5{
+    top: 400px;
+    margin-left: 58%;
+}
+
+.list-img-slot{
+    position: relative;
+    border-radius: 20px;
+}
+.overlay{
+    position: relative;
 }

@@ -13,6 +13,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -26,8 +30,8 @@
                 </ul>
     
                 <ul class="header-tel">
-                    <li><img src="images/Vector.svg" alt="phone"><a href="tel: +380959428868">+380959428868</a></li>
-                    <li><img src="images/Vector.svg" alt="phone"><a href="tel: +380977725838">+380977725838</a></li>
+                    <li><i class="ri-phone-line"></i><a href="tel: +380959428868">+380959428868</a></li>
+                    <li><i class="ri-phone-line"></i><a href="tel: +380977725838">+380977725838</a></li>
                 </ul>
             </div>
             <div class="under-header">
@@ -117,7 +121,46 @@
             </ul>
         </section>
 
-        <section our-projects></section>
+        <section class="collabs">
+            <h2 class="h2-colab">з ким співпрацюємо?</h2>
+            <table class="collaborations">
+                <tr class="corner">
+                    <td colspan="4"><h4>бруківка</h4></td>
+                </tr>
+                <tr>
+                    <td><img src="images/miydvir.png" alt="мій двір"></td>
+                    <td><img src="images/ozon.png" alt="OZON"></td>
+                    <td><img src="images/garant.png" alt="Гарант+"></td>
+                    <td><img src="images/unibruk.png" alt="unibruk"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><h4>ремонт</h4></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><img src="images/ceresit.png" alt="ceresit"><p class="des">усі види стяжки, клей, утеплення</p></td>
+                </tr>
+                <tr><td colspan="4"><h4>дахи та фасади</h4></td></tr>
+                <tr>
+                    <td colspan="4"><img src="images/rockwool.png" alt="rockwool"><p class="des">утеплення криш та фасадів мінватою</p></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="our-projects">
+
+            <div class="wrapper">
+                <div class="overlay"></div>
+                <div class="wrap-img"><img src="images/triangle.png" alt="triangle" class="triangle"></div>
+                <div class="wrap-text"><h2>крайні проекти</h2></div>
+                <div class="list-img">
+                    <img src="images/house1.jpg" alt="дім" class="list-img-slot slot1">
+                    <img src="images/toilet1.jpg" alt="дім" class="list-img-slot slot2">
+                    <img src="images/bedroom1.jpg" alt="дім" class="list-img-slot slot3">
+                    <img src="images/kitchen.jpg" alt="дім" class="list-img-slot slot4">
+                    <img src="images/toilet2.jpg" alt="дім" class="list-img-slot slot5">
+                </div>
+            </div>
+        </section>
 
         <section class="where-we-work"></section>
 
