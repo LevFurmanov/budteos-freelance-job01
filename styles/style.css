@@ -1,4 +1,5 @@
 body{
+    background-color: #EDCA17;
     margin: 0;
     padding: 0;
 }
@@ -13,6 +14,10 @@ li{
 *{
     font-family: 'Roboto', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 
 /*HEADER*/ 
 
@@ -418,4 +423,179 @@ h4{
 }
 .overlay{
     position: relative;
+}
+
+
+.where-we-work{
+    text-align: center;
+    background-color: #EDCA17;
+    padding-top: 100px;
+}
+/* WHERE WE WORK */
+.where-we-work>h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.3;
+    text-transform: uppercase;
+
+    color: #131312;
+}
+.job-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+
+.job-slot{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #131312;
+
+}
+
+.ri-map-pin-2-line{
+    height: 90px;
+}
+
+/*QUESTIONS*/
+
+.questions{
+    background-color: #EDCA17;
+    padding-top: 80px;
+    margin-top: -20px;
+    padding-bottom: 100px;
+}
+
+.form-box{
+    background:no-repeat 0 url(../images/curved-lines-yel.png);
+    background-color: #131312;
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 630px;
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 20px;
+}
+
+.form-box-text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.input{
+    height: 80px;
+    width: 550px;
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #131312;
+    opacity: 0.7;
+    border-radius: 55px;
+}
+
+.input-btn{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #131313;
+    border-radius: 53px;
+    height: 60px;
+    width: 50%;
+    align-self: center;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #FFFFFF;
+    padding-top: 19px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.footer-logo{
+    width: 190px;
+    margin-left: -5%;
+}
+
+.footer-rights{
+    margin-left: -15%;
+    margin-top: 95px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.6px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #000000;
+}
+
+.footer-rights>span{
+    text-transform: uppercase;
+}
+
+.reserved-rights{
+    margin-top: 150px;
+    margin-right: 10%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #131312;
+}
+
+.soc-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.soc-media-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.3;
+    text-align: center;
+    text-transform: lowercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+.ri-instagram-fill{
+    font-size: 48px;
+    margin-right: 5px;
+}
+
+.ri-facebook-circle-fill{
+    font-size: 48px;
+    margin-right: 5px;
 }
