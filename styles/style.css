@@ -716,3 +716,54 @@ footer{
     float: left;
     margin-top: -16px;
 }
+
+.modal{
+    padding: 0;
+    border-radius: 20px;
+    background-color: rgba(237, 202, 23, 0.9)
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border-radius: 20px;
+}
+
+.modal-content>h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.modal-content>p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #131312;
+}
+
+.modal-content>img{
+    width: 201px;
+    height: 151px;
+}
+
+.close-link{
+    display: block;
+    background: #FFFFFF;
+    border-radius: 9px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: lowercase;
+    color: #131312;
+    padding: 7px 35px;
+    
+}
