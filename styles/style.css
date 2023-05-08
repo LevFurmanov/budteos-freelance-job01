@@ -508,11 +508,12 @@ h4{
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    text-align: center;
+    text-align: left;
     text-transform: capitalize;
     color: #131312;
     opacity: 0.7;
     border-radius: 55px;
+    padding-left: 5vh;
 }
 
 .input-btn{
@@ -577,6 +578,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
+    gap: 15px;
 }
 
 .soc-media-text{
@@ -592,10 +594,12 @@ footer{
 
 .ri-instagram-fill{
     font-size: 48px;
-    margin-right: 5px;
+    float: left;
+    margin-top: -17px;
 }
 
 .ri-facebook-circle-fill{
     font-size: 48px;
-    margin-right: 5px;
+    float: left;
+    margin-top: -16px;
 }
