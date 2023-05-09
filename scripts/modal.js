@@ -4,6 +4,6 @@ $(".modal-btn").on("click", (e) => {
         escapeClose: false,
         clickClose: true,
         showClose: false, 
-        fadeDuration: 200
+        fadeDuration: 200 
       });
 })
