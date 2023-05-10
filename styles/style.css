@@ -501,29 +501,19 @@ h4{
 }
 
 .list-img{
-    position: relative;
-}
-
-.slot1{
-}
-
-.slot2{
-
-}
-
-.slot3{
-}
-
-.slot4{
-}
-
-.slot5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px 85px 0px 85px;
 }
 
 .list-img-slot{
-    position: relative;
     border-radius: 20px;
+    margin-bottom: 135px;
+}
 
+.slot3{
 }
 .overlay{
     position: relative;
