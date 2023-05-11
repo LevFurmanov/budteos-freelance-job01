@@ -20,178 +20,71 @@ html{
 
 a{
     text-decoration: none;
+    color: #131312;
 }
 
 .container{
-    padding: 0 25px 25px;
+    max-width: 1370px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 
 
 /*HEADER*/ 
 
-.info-section{
-    margin: 0;
-    padding-top: 5px;
-    padding-bottom: 68px;
+.wrapper-nav{
+    background-color: #FFFFFF;
+    padding: 12px 25px 6px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+    width: 100%;
 }
 
 .header-container{
-    width: 80%;
-    height: 62px;
+    padding-top: 5px;
+}
+.header-nav{
     display: flex;
-    align-items: center;
-    background-color: #FFFFFF;
-    border-radius: 24px;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: space-between;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    margin-left: 180px;
+    transform: translateY(-3px);
 }
-.header-info{
-    display: flex;
-    gap: 48px;
-    list-style: none;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: 30%;
-}
-
 
 .header-logo{
-    margin-top: auto;
-    margin-left: 2em;
-    width: 80%;
+    margin-right: auto;
+}
+
+.header-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.anim{
+    margin-right: 35px;
+}
+
+.tel-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ri-phone-line{
+    margin-right: 1vh;
+}
+
+.anim:not(:last-child){
+    margin-right: 0;
 }
 
 .menu-icon{
     display: none;
 }
-
-.header-info>li{
-    position: relative;
-}
-
-.anim{
-    display: inline-block;
-    font-style: normal;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.1;
-    color: #131312;
-    padding-bottom: 0.25rem;
-}
-
-.anim::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #131312;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.anim:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-
-.info-section {
-    background-color: #EDCA17;
-}
-
-.header-tel{
-    margin-right: 3%;
-    line-height: 18px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-}
-.header-tel>li{
-    list-style: none;
-}
-
-.header-tel>li>a{
-    text-decoration: none;
-    color: #131312;
-    margin-left: 1vh;
-}   
-
-.under-header{
-    display: flex;
-    padding-left: 3vh;
-}
-.column{
-    flex: 50%;
-}
-    
-
-.left-section-header{
-    flex: 50%;
-}
-
-.image-sec{
-    position: relative;
-}
-
-.header-btn{
-    display: inline-block;
-    padding: 13px 35px;
-    color: #FFFFFF;
-    background-color: #131312;
-    box-shadow: 3.30492px 3.30492px 6.60984px rgba(0, 0, 0, 0.1), 3.30492px 3.30492px 6.60984px rgba(0, 0, 0, 0.1), inset 0px 3.30492px 3.30492px rgba(0, 0, 0, 0.25), inset 0px 3.30492px 3.30492px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
-    margin-top: 4em;
-    font-weight: 400;
-    font-size: 20px;
-    margin-left: 3em;
-    line-height: 1;
-    border: none;
-    transition: box-shadow 0.8s, background-color 0.8s, color 0.8s ease-in-out;
-}
-
-.header-btn>a{
-    color: #FFFFFF;
-    transition: color 0.8s ease-in-out;
-    width: 100%;
-}
-.header-btn:hover{
-    box-shadow: 3.30492px 3.30492px 6.60984px rgba(0, 0, 0, 0.1), 3.30492px 3.30492px 6.60984px rgba(0, 0, 0, 0.1), inset 0px 3.30492px 3.30492px rgba(0, 0, 0, 0.25), inset 0px 3.30492px 3.30492px rgba(0, 0, 0, 0.25);
-    background-color: #FFFFFF;
-    color:#131312 ;
-}
-
-.header-btn:hover>a{
-    color: #131312;
-}
-
-h1{
-    color: white;
-    font-style: normal;
-    font-size: 50px;
-    line-height: 69px;
-}
-
-.text{
-    color: white;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 1.3;
-    text-transform: lowercase;
-}
-
-span{
-    color: #1F1D1D;
-}
-
 
 .slick-wrapper{
     position: relative;
@@ -792,9 +685,3 @@ footer{
     }
 
 }
-
-
-@media (max-width: 960px){
-    
-}
-
