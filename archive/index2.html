@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BUDTEOS</title>
-  <link rel="icon" href="./img/logo/logo.svg">
+  <link rel="icon" href="./images/logo.svg">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,119 +14,85 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="styles/style2.css">
 </head>
 
 <body>
   <header>
     <div class="container header-container">
-      <div class="header-mobile-menu">
-        <div class="header-mobile-top">
-          <a class="header-mobile-logo" href="#">
-            <img src="./img/logo/logo.svg" alt="logo" class="header-mobile-logo-img">
-          </a>
-          <button class="header-burger-mobile">
-            <svg class="header-burger-icon-mobile" width="22" height="10" viewBox="0 0 22 10" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <line x1="5" y1="5.4" x2="22" y2="5.4" stroke="white" stroke-width="1.2" />
-              <line x1="10" y1="9.4" x2="22" y2="9.4" stroke="white" stroke-width="1.2" />
-              <line x1="5.24537e-08" y1="1.4" x2="22" y2="1.4" stroke="white" stroke-width="1.2" />
-            </svg>
-          </button>
+
+    </div>
+    <div class="wrapper-nav">
+      <a href="#"><img src="images/logo.svg" alt="logo" class="header-logo"></a>
+      <nav class="header-nav">
+        <ul class="header-info">
+          <li><a href="/" class="anim">головна</a></li>
+          <li><a href="#wrapper" class="anim">проєкти</a></li>
+          <li><a href="#features" class="anim">послуги</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <div class="tel-list">
+      <a href="tel: +380959428868"><span class="ri-phone-line"></span>+380959428868</a>
+      <a href="tel: +380977725838"><span class="ri-phone-line"></span>+380977725838</a>
+    </div>
+
+    </div>
+    <!-- BURGER MENU -->
+    <button class="menu-icon" type="button" onclick="openMenu()"><i class="ri-menu-line"></i></i></button>
+    <div class="burgerMenu" id="burgerMenu">
+      <button class="menu-icon-inner" type="button" onclick="openMenu()"><i class="ri-menu-line"></i></i></button>
+      <a href="#"><img src="images/logo.svg" alt="logo" class="header-logo"></a>
+      <ul class="header-info header-info-inner">
+        <li><a href="/" class="anim">головна</a></li>
+        <li><a href="#wrapper" class="anim">проєкти</a></li>
+        <li><a href="#features" class="anim">послуги</a></li>
+      </ul>
+
+      <div class="tel-list">
+        <a href="tel: +380959428868"><span class="ri-phone-line"></span>+380959428868</a>
+        <a href="tel: +380977725838"><span class="ri-phone-line"></span>+380977725838</a>
+      </div>
+    </div>
+
+    <div class="under-header">
+      <div class="left-section-header column">
+        <h1>БУДІВЕЛЬНА КОМПАНІЯ <br><span>BUDTEOS</span></h1>
+        <h2 class="text">Будуй мрії з <span>budteos - надійність та <br> якість</span> на кожному кроці!</h2>
+        <div class="header-action">
+          <a href="#about-company" class="header-btn">дізнатись більше</a>
         </div>
-        <div class="header-mobile-bottom">
-          <nav class="header-nav-mobile">
-            <ul class="header-list-mobile">
-              <li class="header-item-mobile">
-                <a href="/" class="header-link-mobile">головна</a>
-              </li>
-              <li class="header-item-mobile">
-                <a href="#wrapper" class="header-link-mobile">проєкти</a>
-              </li>
-              <li class="header-item-mobile">
-                <a href="#features" class="header-link-mobile">послуги</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header-block-phone-mobile">
-            <a class="header-link-phone-mobile" href="tel:+380959428868">
-              <span class="header-link-icon-phone-mobile"></span>
-              +380959428868
-            </a>
-            <a class="header-link-phone-mobile" href="tel:+380977725838">
-              <span class="header-link-icon-phone-mobile"></span>
-              +380977725838
-            </a>
+      </div>
+
+      <div class="slick-wrapper">
+        <div class="image-sec column">
+          <div class="slick-slider">
+            <img src="images/modern-house-pic.png" alt="house" class="header-img">
+            <img src="images/modern-house-pic.png" alt="house" class="header-img">
+            <img src="images/modern-house-pic.png" alt="house" class="header-img">
+            <img src="images/modern-house-pic.png" alt="house" class="header-img">
           </div>
         </div>
-      </div>
-      <div class="header-wrapper">
-        <a class="header-logo" href="#">
-          <img src="./img/logo/logo.svg" alt="logo" class="header-logo-img">
-        </a>
-        <nav class="header-nav">
-          <ul class="header-list">
-            <li class="header-item">
-              <a href="/" class="header-link">головна</a>
-            </li>
-            <li class="header-item">
-              <a href="#wrapper" class="header-link">проєкти</a>
-            </li>
-            <li class="header-item">
-              <a href="#features" class="header-link">послуги</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-block-phone">
-          <a class="header-link-phone" href="tel:+380959428868">
-            <span class="header-link-icon-phone"></span>
-            +380959428868
-          </a>
-          <a class="header-link-phone" href="tel:+380977725838">
-            <span class="header-link-icon-phone"></span>
-            +380977725838
-          </a>
+        <div class="slick-buttons">
+          <button type="button" class="under-btn-right"><img src="images/arrow-left.svg" alt="arrow right"></button>
+          <button type="button" class="under-btn-left"><img src="images/arrow.svg" alt="arrow left"></button>
         </div>
-        <button class="header-burger"><i class="ri-menu-line"></i></i></button>
+
+        <div class="slick-navigation">
+
+        </div>
       </div>
+    </div>
     </div>
   </header>
 
-  <!-- <div class="under-header">
-    <div class="left-section-header column">
-      <h1>БУДІВЕЛЬНА КОМПАНІЯ <br><span>BUDTEOS</span></h1>
-      <h2 class="text">Будуй мрії з <span>budteos - надійність та <br> якість</span> на кожному кроці!</h2>
-      <div class="header-action">
-        <a href="#about-company" class="header-btn">дізнатись більше</a>
-      </div>
-    </div>
-
-    <div class="slick-wrapper">
-      <div class="image-sec column">
-        <div class="slick-slider">
-          <img src="images/modern-house-pic.png" alt="house" class="header-img">
-          <img src="images/modern-house-pic.png" alt="house" class="header-img">
-          <img src="images/modern-house-pic.png" alt="house" class="header-img">
-          <img src="images/modern-house-pic.png" alt="house" class="header-img">
-        </div>
-      </div>
-      <div class="slick-buttons">
-        <button type="button" class="under-btn-right"><img src="images/arrow-left.svg" alt="arrow right"></button>
-        <button type="button" class="under-btn-left"><img src="images/arrow.svg" alt="arrow left"></button>
-      </div>
-
-      <div class="slick-navigation">
-
-      </div>
-    </div>
-  </div>
-  </div> -->
-
-  <!-- <main>
+  <main>
     <section class="our-features" id="about-company">
 
       <div class="features-row">
@@ -302,7 +268,7 @@
       <a href="#" rel="modal:close" class="close-link">Закрити</a>
       <img src="images/logo.svg" alt="logo">
     </div>
-  </div> -->
+  </div>
 
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -314,7 +280,6 @@
   <script src="libs/inputmask.min.js"></script>
   <script src="./scripts/validation.js"></script>
   <script src="scripts/script.js"></script>
-  <script src="./js/burger-menu.js"></script>
 </body>
 
 </html>

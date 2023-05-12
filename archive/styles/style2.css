@@ -29,6 +29,21 @@ a{
     margin: 0 auto;
 }
 
+.burgerMenu{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.header-info-inner{
+    display: none;
+    flex-direction: column;
+}
 
 
 /*HEADER*/ 
@@ -65,13 +80,47 @@ a{
 }
 
 .anim{
+    position: relative;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    color: #131312;
     margin-right: 35px;
+    padding-bottom: 0.25rem;
+}
+
+.anim::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #131312;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.anim:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .tel-list{
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+.tel-list>a{
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    color: #131312;
 }
 
 .ri-phone-line{
@@ -84,9 +133,79 @@ a{
 
 .menu-icon{
     display: none;
+    background-color: #EDCA17;
+    border-radius: 5px;
+    border: none;
+    width: 32px;
 }
 
+.under-header{
+    display: flex;
+    padding-bottom: 61px;
+}
+
+.left-section-header{
+    flex: 50%;
+}
+
+.image-sec{
+    position: relative;
+}
+
+.header-btn{
+    display: inline-block;
+    padding: 13px 35px;
+    color: #FFFFFF;
+    background-color: #131312;
+    box-shadow: 3.30492px 3.30492px 6.60984px rgba(0, 0, 0, 0.1), 3.30492px 3.30492px 6.60984px rgba(0, 0, 0, 0.1), inset 0px 3.30492px 3.30492px rgba(0, 0, 0, 0.25), inset 0px 3.30492px 3.30492px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin-top: 4em;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 3em;
+    line-height: 1;
+    border: none;
+    transition: box-shadow 0.8s, background-color 0.8s, color 0.8s ease-in-out;
+}
+
+.header-btn>a{
+    color: #FFFFFF;
+    transition: color 0.8s ease-in-out;
+    width: 100%;
+}
+.header-btn:hover{
+    box-shadow: 3.30492px 3.30492px 6.60984px rgba(0, 0, 0, 0.1), 3.30492px 3.30492px 6.60984px rgba(0, 0, 0, 0.1), inset 0px 3.30492px 3.30492px rgba(0, 0, 0, 0.25), inset 0px 3.30492px 3.30492px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+    color:#131312 ;
+}
+
+.header-btn:hover>a{
+    color: #131312;
+}
+
+h1{
+    color: white;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 69px;
+}
+
+.text{
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.3;
+    text-transform: lowercase;
+}
+
+span{
+    color: #1F1D1D;
+}
+
+
 .slick-wrapper{
+    flex: 50%;
     position: relative;
     width: 684px;
     height: 480px;
@@ -161,12 +280,31 @@ a{
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 960px){
+    .header-info{
+    }
+    .tel-list{
+        display: none;
+    }
+    
+
+    .menu-icon{
+        display: block;
+        transition: 0.3s
+    }
+
+}
+
 /*OUR FEATURES*/
 
 .our-features{
     width: 100%;
     background-color: #131312;
     margin-bottom: 0;
+}
+
+.column{
+    flex: 50%;
 }
 
 .features-row {
@@ -685,3 +823,4 @@ footer{
     }
 
 }
+
