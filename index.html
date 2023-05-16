@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BUDTEOS</title>
-  <link rel="icon" href="./img/logo/logo.svg">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+  <link rel="icon" href="./images/logo.svg">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/media.css">
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="container header-container">
       <div class="header-mobile-menu">
         <div class="header-mobile-top">
           <a class="header-mobile-logo" href="#">
-            <img src="./img/logo/logo.svg" alt="logo" class="header-mobile-logo-img">
+            <img src="../img/logo/logo.svg" alt="logo" class="header-mobile-logo-img">
           </a>
           <button class="header-burger-mobile">
             <svg class="header-burger-icon-mobile" width="22" height="10" viewBox="0 0 22 10" fill="none"
@@ -66,7 +69,7 @@
       </div>
       <div class="header-wrapper">
         <a class="header-logo" href="#">
-          <img src="./img/logo/logo.svg" alt="logo" class="header-logo-img">
+          <img src="../img/logo/logo.svg" alt="logo" class="header-logo-img">
         </a>
         <nav class="header-nav">
           <ul class="header-list">
@@ -83,52 +86,75 @@
         </nav>
         <div class="header-block-phone">
           <a class="header-link-phone" href="tel:+380959428868">
+            <i class="ri-phone-line"></i>
             <span class="header-link-icon-phone"></span>
             +380959428868
           </a>
           <a class="header-link-phone" href="tel:+380977725838">
+            <i class="ri-phone-line"></i>
             <span class="header-link-icon-phone"></span>
             +380977725838
           </a>
         </div>
-        <button class="header-burger"><i class="ri-menu-line"></i></i></button>
+        <button class="header-burger"><i class="ri-menu-line"></i></button>
       </div>
     </div>
   </header>
-
-  <!-- <div class="under-header">
-    <div class="left-section-header column">
-      <h1>БУДІВЕЛЬНА КОМПАНІЯ <br><span>BUDTEOS</span></h1>
-      <h2 class="text">Будуй мрії з <span>budteos - надійність та <br> якість</span> на кожному кроці!</h2>
-      <div class="header-action">
-        <a href="#about-company" class="header-btn">дізнатись більше</a>
-      </div>
-    </div>
-
-    <div class="slick-wrapper">
-      <div class="image-sec column">
-        <div class="slick-slider">
-          <img src="images/modern-house-pic.png" alt="house" class="header-img">
-          <img src="images/modern-house-pic.png" alt="house" class="header-img">
-          <img src="images/modern-house-pic.png" alt="house" class="header-img">
-          <img src="images/modern-house-pic.png" alt="house" class="header-img">
+  <main>
+    <section class="first">
+      <div class="container first-container">
+        <div class="first-content">
+          <div class="left-section-header column">
+            <h1 class="first-title title">БУДІВЕЛЬНА КОМПАНІЯ &nbsp;<span class="context-color">BUDTEOS</span></h1>
+            <p class="first-description description">Будуй мрії з <span class="context-color">budteos - надійність та
+                &nbsp; якість</span> на
+              кожному кроці!
+            </p>
+            <div class="button-block">
+              <a href="#about-company" class="header-btn">
+                дізнатись більше
+              </a>
+            </div>
+          </div>
+          <div class="slick-wrapper">
+            <div class="image-sec column">
+              <div class="slick-slider">
+                <img src="./images/modern-house-pic.png" alt="house" class="header-img">
+                <img src="./images/slide2.jpg" alt="house" class="header-img">
+                <img src="./images/slide3.jpg" alt="house" class="header-img">
+                <img src="./images/slide4.jpg" alt="house" class="header-img">
+              </div>
+            </div>
+            <div class="slick-buttons">
+              <button type="button" class="first-slide-btn prev">
+                <svg class="first-arrow-right" width="28" height="22" viewBox="0 0 28 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M25.6667 9.30572H5.89999L11.95 2.84274C12.2329 2.54002 12.369 2.14975 12.3284 1.75778C12.2877 1.36581 12.0737 1.00425 11.7333 0.752644C11.393 0.501035 10.9542 0.379985 10.5135 0.416124C10.0727 0.452263 9.66622 0.642631 9.38332 0.945348L1.04999 9.83936C0.993924 9.9101 0.943789 9.98442 0.89999 10.0617C0.89999 10.1358 0.89999 10.1803 0.783323 10.2544C0.707779 10.4244 0.668225 10.6053 0.666656 10.7881C0.668225 10.9708 0.707779 11.1517 0.783323 11.3217C0.783323 11.3958 0.783323 11.4403 0.89999 11.5144C0.943789 11.5917 0.993924 11.666 1.04999 11.7368L9.38332 20.6308C9.54003 20.7981 9.73626 20.9327 9.95807 21.0249C10.1799 21.1171 10.4218 21.1648 10.6667 21.1644C11.0561 21.1651 11.4335 21.0445 11.7333 20.8235C11.9021 20.699 12.0416 20.5462 12.1438 20.3737C12.2461 20.2013 12.3091 20.0126 12.3292 19.8184C12.3493 19.6243 12.3262 19.4285 12.2611 19.2423C12.1961 19.0561 12.0903 18.8832 11.95 18.7334L5.89999 12.2704H25.6667C26.1087 12.2704 26.5326 12.1142 26.8452 11.8362C27.1577 11.5582 27.3333 11.1812 27.3333 10.7881C27.3333 10.3949 27.1577 10.0179 26.8452 9.73989C26.5326 9.46189 26.1087 9.30572 25.6667 9.30572Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button type="button" class="first-slide-btn next">
+                <svg class="first-arrow-left" width="28" height="22" viewBox="0 0 28 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M25.6667 9.30572H5.89999L11.95 2.84274C12.2329 2.54002 12.369 2.14975 12.3284 1.75778C12.2877 1.36581 12.0737 1.00425 11.7333 0.752644C11.393 0.501035 10.9542 0.379985 10.5135 0.416124C10.0727 0.452263 9.66622 0.642631 9.38332 0.945348L1.04999 9.83936C0.993924 9.9101 0.943789 9.98442 0.89999 10.0617C0.89999 10.1358 0.89999 10.1803 0.783323 10.2544C0.707779 10.4244 0.668225 10.6053 0.666656 10.7881C0.668225 10.9708 0.707779 11.1517 0.783323 11.3217C0.783323 11.3958 0.783323 11.4403 0.89999 11.5144C0.943789 11.5917 0.993924 11.666 1.04999 11.7368L9.38332 20.6308C9.54003 20.7981 9.73626 20.9327 9.95807 21.0249C10.1799 21.1171 10.4218 21.1648 10.6667 21.1644C11.0561 21.1651 11.4335 21.0445 11.7333 20.8235C11.9021 20.699 12.0416 20.5462 12.1438 20.3737C12.2461 20.2013 12.3091 20.0126 12.3292 19.8184C12.3493 19.6243 12.3262 19.4285 12.2611 19.2423C12.1961 19.0561 12.0903 18.8832 11.95 18.7334L5.89999 12.2704H25.6667C26.1087 12.2704 26.5326 12.1142 26.8452 11.8362C27.1577 11.5582 27.3333 11.1812 27.3333 10.7881C27.3333 10.3949 27.1577 10.0179 26.8452 9.73989C26.5326 9.46189 26.1087 9.30572 25.6667 9.30572Z"
+                    fill="white" />
+                </svg>
+              </button>
+            </div>
+            <div class="slick-navigation">
+            </div>
+          </div>
+          <div class="button-block-mobile">
+            <a href="#about-company" class="header-btn">
+              дізнатись більше
+            </a>
+          </div>
         </div>
       </div>
-      <div class="slick-buttons">
-        <button type="button" class="under-btn-right"><img src="images/arrow-left.svg" alt="arrow right"></button>
-        <button type="button" class="under-btn-left"><img src="images/arrow.svg" alt="arrow left"></button>
-      </div>
-
-      <div class="slick-navigation">
-
-      </div>
-    </div>
-  </div>
-  </div> -->
-
-  <!-- <main>
-    <section class="our-features" id="about-company">
-
+    </section>
+    <!-- <section class="our-features" id="about-company">
       <div class="features-row">
         <div class="features-img column"><img src="images/ourfeatures.jpg" alt="kitchen"></div>
         <div class="about-block column">
@@ -153,49 +179,51 @@
         </div>
       </div>
     </section>
-
     <section class="wework" id="features">
       <h2 class="our-offers">наші послуги</h2>
       <ul class="our-offers-list">
-        <li>
-          <div class="work-block">
-            <img src="images/house.png" alt="house">
-            <h3>будівництво будинків, офісів, котеджів</h3>
-          </div>
-        </li>
-        <li>
-          <div class="work-block">
-            <img src="images/builder.png" alt="builder">
-            <h3>ремонт під ключ</h3>
-          </div>
-        </li>
-        <li>
-          <div class="work-block">
-            <img src="images/fence.png" alt="fence">
-            <h3>паркани та огорожі</h3>
-          </div>
-        </li>
-        <li>
-          <div class="work-block">
-            <img src="images/big-house.png" alt="house">
-            <h3>дах під ключ</h3>
-          </div>
-        </li>
-        <li>
-          <div class="work-block">
-            <img src="images/road.png" alt="road">
-            <h3>продаж та укладання бруківки</h3>
-          </div>
-        </li>
-        <li>
-          <div class="work-block">
-            <img src="images/delivery.png" alt="delivery truck">
-            <h3>доставка матеріалів для будівництва</h3>
-          </div>
-        </li>
+        <div class="first-work-block-container">
+          <li>
+            <div class="work-block">
+              <img src="images/house.png" alt="house">
+              <h3>будівництво будинків, офісів, котеджів</h3>
+            </div>
+          </li>
+          <li>
+            <div class="work-block">
+              <img src="images/builder.png" alt="builder">
+              <h3>ремонт під ключ</h3>
+            </div>
+          </li>
+          <li>
+            <div class="work-block">
+              <img src="images/fence.png" alt="fence">
+              <h3>паркани та огорожі</h3>
+            </div>
+          </li>
+        </div>
+        <div class="second-work-block-container">
+          <li>
+            <div class="work-block">
+              <img src="images/big-house.png" alt="house">
+              <h3>дах під ключ</h3>
+            </div>
+          </li>
+          <li>
+            <div class="work-block">
+              <img src="images/road.png" alt="road">
+              <h3>продаж та укладання бруківки</h3>
+            </div>
+          </li>
+          <li>
+            <div class="work-block">
+              <img src="images/delivery.png" alt="delivery truck">
+              <h3>доставка матеріалів для будівництва</h3>
+            </div>
+          </li>
+        </div>
       </ul>
     </section>
-
     <section class="collabs" id="collabs">
       <h2 class="h2-colab">з ким співпрацюємо?</h2>
       <table class="collaborations">
@@ -232,7 +260,6 @@
         </tr>
       </table>
     </section>
-
     <section class="our-projects">
 
       <div class="wrapper" id="wrapper">
@@ -250,7 +277,6 @@
         </div>
       </div>
     </section>
-
     <section class="where-we-work">
       <h2>де працюємо?</h2>
       <ul class="job-container">
@@ -265,7 +291,6 @@
         </li>
       </ul>
     </section>
-
     <section class="questions">
       <div class="form-box">
         <h2 class="form-box-text">є питання?</h2>
@@ -282,9 +307,9 @@
         </form>
       </div>
 
-    </section>
+    </section> -->
   </main>
-  <footer>
+  <!-- <footer>
     <img src="images/logo.svg" alt="logo" class="footer-logo">
     <h2 class="footer-rights">© Компанія <span>BUDTEOS</span></h2>
     <p class="reserved-rights">Всі права захищені</p>
@@ -303,18 +328,17 @@
       <img src="images/logo.svg" alt="logo">
     </div>
   </div> -->
-
-
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-  <script src="./scripts/slider.js"></script>
   <script src="libs/inputmask.min.js"></script>
+  <script src="./libs/just-validate.min.js"></script>
+  <script src="./scripts/slider.js"></script>
+  <script src="./scripts/validate.min.js"></script>
   <script src="./scripts/validation.js"></script>
-  <script src="scripts/script.js"></script>
-  <script src="./js/burger-menu.js"></script>
+  <script src="./scripts/burger-menu.js"></script>
 </body>
 
 </html>
