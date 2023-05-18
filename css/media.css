@@ -1,11 +1,15 @@
 @media (max-width: 1024px) {
-  .tel-list {
+  .header-block-phone{
     display: none;
   }
 
-  .menu-icon {
+  .header-burger {
     display: block;
-    transition: 0.3s
+    translate: 0.2s;
+  }
+
+  .header-list{
+    display: none;
   }
 
   .first-content {
@@ -60,4 +64,9 @@
   .slick-dots {
     bottom: 0;
   }
+
+  p{
+    text-align: center;
+  }
+
 }

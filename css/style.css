@@ -681,7 +681,6 @@ h4 {
 .list-img {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(660px, 1fr));
-  grid-template-rows: 40% 25% 35%;
   justify-items: center;
 }
 
