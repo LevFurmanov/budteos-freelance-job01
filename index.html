@@ -156,8 +156,11 @@
     </section>
     <section class="our-features" id="about-company">
       <div class="features-row">
-        <div class="features-img column"><img src="images/ourfeatures.jpg" alt="kitchen"></div>
-        <div class="about-block column">
+        <div class="features-img column-features">
+          <img src="images/ourfeatures.jpg" alt="kitchen">
+          <button type="button" class="features-btn reverb"> <a href="#collabs">гортай нижче</a></button>
+        </div>
+        <div class="about-block column-features">
           <h2 class="about-company">ПРО КОМПАНІЮ</h2>
           <ul class="about-list">
             <li>
@@ -268,57 +271,58 @@
           <h2>крайні проєкти</h2>
         </div>
         <div class="list-img">
-          <img src="images/toilet1.jpg" alt="дім" class="list-img-slot slot1">
-          <img src="images/bedroom1.jpg" alt="дім" class="list-img-slot slot2">
-          <img src="images/kitchen1.jpg" alt="дім" class="list-img-slot slot3">
-          <img src="images/house1.jpg" alt="дім" class="list-img-slot slot4">
-          <img src="images/kichen2.jpg" alt="дім" class="list-img-slot slot5">
-          <img src="images/livingroom1.jpg" alt="дім" class="list-img-slot slot6">
+          <img src="images/toilet1.png" alt="дім" class="list-img-slot slot1">
+          <img src="images/bedroom1.png" alt="дім" class="list-img-slot slot2">
+          <img src="images/kitchen1.png" alt="дім" class="list-img-slot slot3">
+          <img src="images/house1.png" alt="дім" class="list-img-slot slot4">
+          <img src="images/kitchen2.png" alt="дім" class="list-img-slot slot5">
+          <img src="images/livingroom1.png" alt="дім" class="list-img-slot slot6">
         </div>
       </div>
     </section>
     <section class="where-we-work">
-      <h2>де працюємо?</h2>
-      <ul class="job-container">
-        <li class="job-slot">
-          <h3 class="job-h3"><i class="ri-map-pin-2-line"></i>івано-франківськ <br> (та його околиці)</h3>
-        </li>
-        <li class="job-slot">
-          <h3 class="job-h3"><i class="ri-map-pin-2-line"></i>львів</h3>
-        </li>
-        <li class="job-slot">
-          <h3 class="job-h3"><i class="ri-map-pin-2-line"></i>буковель</h3>
-        </li>
-      </ul>
+      <div class="container where-we-work">
+        <h2 class="title where-we-work-title">де працюємо?</h2>
+        <ul class="job-container">
+          <li class="job-slot">
+            <h3 class="job-h3"><i class="ri-map-pin-2-line"></i>івано-франківськ <br> (та його околиці)</h3>
+          </li>
+          <li class="job-slot">
+            <h3 class="job-h3"><i class="ri-map-pin-2-line"></i>львів</h3>
+          </li>
+          <li class="job-slot">
+            <h3 class="job-h3"><i class="ri-map-pin-2-line"></i>буковель</h3>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="questions">
-      <div class="form-box">
-        <h2 class="form-box-text">є питання?</h2>
-        <form action="" class="form input-box" id="form">
-          <div class="input-wrapper">
+      <div class="container questions-container">
+        <div class="form-box">
+          <h2 class="form-box-text">є питання?</h2>
+          <form action="#" class="form" id="form">
             <div class="input-error name" data-show="false">Недостатньо символів</div>
             <input type="text" placeholder="Ім'я" class="input name" name="name">
-          </div>
-          <div class="input-wrapper">
             <div class="input-error phone" data-show="false">Неправильно набраний номер</div>
             <input type="tel" placeholder="Номер телефону" class="input tel" name="tel">
-          </div>
-          <button type="submit" class="input-btn modal-btn">залишити заявку</button>
-        </form>
+            <button type="submit" class="input-btn modal-btn">залишити заявку</button>
+          </form>
+        </div>
       </div>
-
     </section>
   </main>
-  <footer>
-    <img src="images/logo.svg" alt="logo" class="footer-logo">
-    <h2 class="footer-rights">© Компанія <span>BUDTEOS</span></h2>
-    <p class="reserved-rights">Всі права захищені</p>
-
-    <ul class="soc-media">
-      <li><a href="https://www.instagram.com/bud_teos/" class="soc-media-text" target="_blank"><i
-            class="ri-instagram-fill"></i>наш інстаграм</a></li>
-      <li><a href="#" class="soc-media-text" target="_blank"><i class="ri-facebook-circle-fill"></i>наш фейсбук</a></li>
-    </ul>
+  <footer class="footer">
+    <div class="container footer-container">
+      <img src="images/logo.svg" alt="logo" class="footer-logo">
+      <h2 class="footer-rights">© Компанія <span>BUDTEOS</span></h2>
+      <p class="reserved-rights">Всі права захищені</p>
+      <ul class="soc-media">
+        <li><a href="https://www.instagram.com/bud_teos/" class="soc-media-text" target="_blank"><i
+              class="ri-instagram-fill"></i>наш інстаграм</a></li>
+        <li><a href="#" class="soc-media-text" target="_blank"><i class="ri-facebook-circle-fill"></i>наш фейсбук</a>
+        </li>
+      </ul>
+    </div>
   </footer>
   <div id="ex1" class="modal">
     <div class="modal-content">

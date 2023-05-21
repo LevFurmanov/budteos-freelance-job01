@@ -1,5 +1,19 @@
+@media (max-width: 1200px) {
+  .features-img {
+    margin: 0 40px 0 0;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+  }
+
+  .footer-rights {
+    margin-left: 0;
+    transition: 0.2s;
+  }
+}
+
 @media (max-width: 1024px) {
-  .header-block-phone{
+  .header-block-phone {
     display: none;
   }
 
@@ -8,7 +22,7 @@
     translate: 0.2s;
   }
 
-  .header-list{
+  .header-list {
     display: none;
   }
 
@@ -65,8 +79,204 @@
     bottom: 0;
   }
 
-  p{
+  p {
     text-align: center;
   }
 
+
+  .features-row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+
+  .about-block {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .about-list {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .column-features {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5%;
+    align-items: center;
+    margin: 5% 0
+  }
+
+  .column-features>img {
+    margin-bottom: 4%;
+  }
+
+  .features-btn {
+    display: none;
+  }
+
+  .reverb {
+    display: block;
+    margin: 0;
+  }
+
+  .job-slot {
+    font-size: 20px;
+  }
+
+  .our-offfers {
+    padding: 0 5%;
+    translate: 0.2s;
+  }
+
+  .about-company {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .our-features {
+    padding-bottom: 4%;
+  }
+
+
+}
+
+@media (max-width: 960px) {}
+
+@media (max-width: 768px) {
+
+  .our-offers-list {
+    flex-wrap: wrap;
+  }
+
+  .slick-wrapper {
+    max-width: 450px;
+  }
+
+  .slick-buttons {
+    display: none;
+  }
+
+  .header {
+    margin: 0;
+    padding: 0 auto;
+  }
+
+  a {
+    font-size: 20px;
+  }
+
+  .triangle {
+    width: 60%;
+  }
+
+  .work-block {
+    max-width: 220px;
+  }
+
+  .job-container {
+    padding: 0 3%;
+    transition: 0.2s;
+  }
+
+  .where-we-work>h2 {
+    padding: 0 3%;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-list>li>span {
+    font-size: 33px;
+  }
+
+  .about-list>li>p {
+    font-size: 12px;
+  }
+
+  .slick-wrapper {
+    width: 320px;
+    margin: 3%;
+  }
+
+  .slick-dots {
+    bottom: 10px;
+  }
+
+  .slick-buttons {
+    width: 0;
+  }
+
+  .about-company {
+    text-align: center;
+  }
+
+  .h2-colab {
+    font-size: 23px;
+  }
+
+  .job-h3 {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .form-box {
+    padding: 5px 0 48px;
+  }
+
+  .form-box-text {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+
+  .input {
+    margin-bottom: 15px;
+    font-size: 12px;
+    padding: 7px 0 7px 8px;
+  }
+
+  .input-btn {
+    font-size: 12px;
+    border-radius: 53px;
+    padding: 5px 9px;
+    align-self: center;
+    transition: background-color 0.7s ease-in-out;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    order: 2;
+  }
+
+  .footer-rights {
+    order: 1;
+  }
+
+  .footer-logo,
+  .footer-rights,
+  .reserved-rights,
+  .soc-media {
+    margin-bottom: 15px;
+  }
+
+  .reserved-rights {
+    display: block;
+    align-self: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #131312;
+  }
 }
