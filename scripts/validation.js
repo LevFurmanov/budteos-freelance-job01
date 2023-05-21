@@ -10,7 +10,6 @@ const inputMask = new Inputmask("+38 (999) 999-99-99");
 inputMask.mask(phoneSelector);
 
 const phonePattern = /^\+?3?8?(0\d{9})$/;
-
 const constraints = {
   name: {
     presence: true,
