@@ -301,10 +301,14 @@
         <div class="form-box">
           <h2 class="form-box-text">є питання?</h2>
           <form action="#" class="form" id="form">
-            <div class="input-error name" data-show="false">Недостатньо символів</div>
-            <input type="text" placeholder="Ім'я" class="input name" name="name">
-            <div class="input-error phone" data-show="false">Неправильно набраний номер</div>
-            <input type="tel" placeholder="Номер телефону" class="input tel" name="tel">
+            <div class="input-wrapper">
+              <div class="input-error name" data-show="false">Недостатньо символів</div>
+              <input type="text" placeholder="Ім'я" class="input name" name="name">
+            </div>
+            <div class="input-wrapper">
+              <div class="input-error phone" data-show="false">Неправильно набраний номер</div>
+              <input type="tel" placeholder="Номер телефону" class="input tel" name="tel">
+            </div>
             <button type="submit" class="input-btn modal-btn">залишити заявку</button>
           </form>
         </div>
@@ -338,13 +342,11 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
   <script src="libs/inputmask.min.js"></script>
-  <script src="./libs/just-validate.min.js"></script>
-  <script src="./scripts/slider.js"></script>
-  <script src="./scripts/validate.min.js"></script>
-  <script src="./scripts/validation.js"></script>
-  <script src="./scripts/burger-menu.js"></script>
+  <!-- <script src="libs/just-validate.min.js"></script> -->
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/validation.js"></script>
+  <script src="scripts/burger-menu.js"></script>
   <script src="scripts/script.js"></script>
   <script src="scripts/modal.js"></script>
 </body>
-
 </html>
