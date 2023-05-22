@@ -190,6 +190,12 @@
 }
 
 @media (max-width: 576px) {
+
+  .input-error{
+    font-size: 12px;
+    transform: translateY(-15px);
+    z-index: 2000;
+  }
   .about-list>li>span {
     font-size: 33px;
   }
@@ -212,7 +218,7 @@
   }
 
   .about-company {
-    text-align: center;
+     text-align: center;
   }
 
   .h2-colab {

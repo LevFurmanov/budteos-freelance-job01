@@ -821,7 +821,7 @@ h4 {
 .input-error {
   color: red;
   position: absolute;
-  top: -25px;
+  transform: translateY(-35px);
   display: none;
 }
 
