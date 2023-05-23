@@ -285,4 +285,8 @@
     text-transform: lowercase;
     color: #131312;
   }
+
+  .features-btn{
+    padding: 12px 25px;
+  }
 }

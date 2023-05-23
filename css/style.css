@@ -490,25 +490,24 @@ a {
   text-overflow: scroll;
 }
 
-.reverb {
-  display: none;
-}
-
 .features-btn {
-  width: 30vh;
-  height: 8vh;
+  color: var(--white);
+  display: inline-block;
+  padding: 25px 50px;
   box-sizing: border-box;
   border: 2px solid #EDCA17;
   border-radius: 16px;
   background-color: transparent;
-  color: #FFFFFF;
   font-size: 24px;
   margin: 100px 3%;
-  transition: background-color 0.8s, border-radius 0.8s ease;
+  transition: background-color 0.8s, border-radius 0.8s, color 0.8s ease;
 }
 
-.features-btn:hover>a {
-  transition: color 0.8s ease;
+.reverb {
+  display: none;
+}
+
+.features-btn:hover {
   color: #131312;
 }
 
