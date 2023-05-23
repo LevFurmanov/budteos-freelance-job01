@@ -339,6 +339,11 @@ a {
   color: var(--black);
 }
 
+
+.header-img{
+  object-fit: cover;
+  height: 480px;
+}
 .slick-wrapper {
   flex: 50%;
   position: relative;
@@ -428,6 +433,7 @@ a {
 .features-row {
   display: flex;
 }
+
 
 .about-company {
   font-style: normal;
@@ -570,6 +576,7 @@ hr {
   flex-grow: 1;
   margin-bottom: 5%;
   padding: 0 3%;
+  cursor: pointer;
 }
 
 

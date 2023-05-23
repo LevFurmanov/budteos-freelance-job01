@@ -1,350 +1,1043 @@
 <!DOCTYPE html>
 <html lang="ua">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BUDTEOS</title>
-  <link rel="icon" href="./images/logo.svg">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUDTEOS</title>
+    <link rel="icon" href="./images/logo.svg" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/modal-block.css" />
+  </head>
 
-<body>
-  <header class="header">
-    <div class="container header-container">
-      <div class="header-mobile-menu">
-        <div class="header-mobile-top">
-          <a class="header-mobile-logo" href="#">
-            <img src="img/logo/logo.svg" alt="logo" class="header-mobile-logo-img">
-          </a>
-          <button class="header-burger-mobile">
-            <svg class="header-burger-icon-mobile" width="22" height="10" viewBox="0 0 22 10" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <line x1="5" y1="5.4" x2="22" y2="5.4" stroke="white" stroke-width="1.2" />
-              <line x1="10" y1="9.4" x2="22" y2="9.4" stroke="white" stroke-width="1.2" />
-              <line x1="5.24537e-08" y1="1.4" x2="22" y2="1.4" stroke="white" stroke-width="1.2" />
-            </svg>
-          </button>
-        </div>
-        <div class="header-mobile-bottom">
-          <nav class="header-nav-mobile">
-            <ul class="header-list-mobile">
-              <li class="header-item-mobile">
-                <a href="/" class="header-link-mobile">головна</a>
-              </li>
-              <li class="header-item-mobile">
-                <a href="#wrapper" class="header-link-mobile">проєкти</a> 
-              </li>
-              <li class="header-item-mobile">
-                <a href="#features" class="header-link-mobile">послуги</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header-block-phone-mobile">
-            <a class="header-link-phone-mobile" href="tel:+380959428868">
-              <span class="header-link-icon-phone-mobile"></span>
-              +380959428868
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="header-mobile-menu">
+          <div class="header-mobile-top">
+            <a class="header-mobile-logo" href="#">
+              <img
+                src="img/logo/logo.svg"
+                alt="logo"
+                class="header-mobile-logo-img"
+              />
             </a>
-            <a class="header-link-phone-mobile" href="tel:+380977725838">
-              <span class="header-link-icon-phone-mobile"></span>
-              +380977725838
-            </a>
+            <button class="header-burger-mobile">
+              <svg
+                class="header-burger-icon-mobile"
+                width="22"
+                height="10"
+                viewBox="0 0 22 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="5"
+                  y1="5.4"
+                  x2="22"
+                  y2="5.4"
+                  stroke="white"
+                  stroke-width="1.2"
+                />
+                <line
+                  x1="10"
+                  y1="9.4"
+                  x2="22"
+                  y2="9.4"
+                  stroke="white"
+                  stroke-width="1.2"
+                />
+                <line
+                  x1="5.24537e-08"
+                  y1="1.4"
+                  x2="22"
+                  y2="1.4"
+                  stroke="white"
+                  stroke-width="1.2"
+                />
+              </svg>
+            </button>
           </div>
-        </div>
-      </div>
-      <div class="header-wrapper">
-        <a class="header-logo" href="#">
-          <img src="../img/logo/logo.svg" alt="logo" class="header-logo-img">
-        </a>
-        <nav class="header-nav">
-          <ul class="header-list">
-            <li class="header-item">
-              <a href="/" class="header-link">головна</a>
-            </li>
-            <li class="header-item">
-              <a href="#wrapper" class="header-link">проєкти</a>
-            </li>
-            <li class="header-item">
-              <a href="#features" class="header-link">послуги</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-block-phone">
-          <a class="header-link-phone" href="tel:+380959428868">
-            <i class="ri-phone-line"></i>
-            <span class="header-link-icon-phone"></span>
-            +380959428868
-          </a>
-          <a class="header-link-phone" href="tel:+380977725838">
-            <i class="ri-phone-line"></i>
-            <span class="header-link-icon-phone"></span>
-            +380977725838
-          </a>
-        </div>
-        <button class="header-burger"><i class="ri-menu-line"></i></button>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="first">
-      <div class="container first-container">
-        <div class="first-content">
-          <div class="left-section-header column">
-            <h1 class="first-title title">БУДІВЕЛЬНА КОМПАНІЯ &nbsp;<span class="context-color">BUDTEOS</span></h1>
-            <p class="first-description description">Будуй мрії з <span class="context-color">budteos - надійність та
-                &nbsp; якість</span> на
-              кожному кроці!
-            </p>
-            <div class="button-block">
-              <a href="#about-company" class="header-btn">
-                дізнатись більше
+          <div class="header-mobile-bottom">
+            <nav class="header-nav-mobile">
+              <ul class="header-list-mobile">
+                <li class="header-item-mobile">
+                  <a href="/" class="header-link-mobile">головна</a>
+                </li>
+                <li class="header-item-mobile">
+                  <a href="#wrapper" class="header-link-mobile">проєкти</a>
+                </li>
+                <li class="header-item-mobile">
+                  <a href="#features" class="header-link-mobile">послуги</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-block-phone-mobile">
+              <a class="header-link-phone-mobile" href="tel:+380959428868">
+                <span class="header-link-icon-phone-mobile"></span>
+                +380959428868
+              </a>
+              <a class="header-link-phone-mobile" href="tel:+380977725838">
+                <span class="header-link-icon-phone-mobile"></span>
+                +380977725838
               </a>
             </div>
           </div>
-          <div class="slick-wrapper">
-            <div class="image-sec column">
-              <div class="slick-slider">
-                <img src="./images/modern-house-pic.png" alt="house" class="header-img">
-                <img src="./images/slide2.jpg" alt="house" class="header-img">
-                <img src="./images/slide3.jpg" alt="house" class="header-img">
-                <img src="./images/slide4.jpg" alt="house" class="header-img">
-              </div>
-            </div>
-            <div class="slick-buttons">
-              <button type="button" class="first-slide-btn prev">
-                <svg class="first-arrow-right" width="28" height="22" viewBox="0 0 28 22" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M25.6667 9.30572H5.89999L11.95 2.84274C12.2329 2.54002 12.369 2.14975 12.3284 1.75778C12.2877 1.36581 12.0737 1.00425 11.7333 0.752644C11.393 0.501035 10.9542 0.379985 10.5135 0.416124C10.0727 0.452263 9.66622 0.642631 9.38332 0.945348L1.04999 9.83936C0.993924 9.9101 0.943789 9.98442 0.89999 10.0617C0.89999 10.1358 0.89999 10.1803 0.783323 10.2544C0.707779 10.4244 0.668225 10.6053 0.666656 10.7881C0.668225 10.9708 0.707779 11.1517 0.783323 11.3217C0.783323 11.3958 0.783323 11.4403 0.89999 11.5144C0.943789 11.5917 0.993924 11.666 1.04999 11.7368L9.38332 20.6308C9.54003 20.7981 9.73626 20.9327 9.95807 21.0249C10.1799 21.1171 10.4218 21.1648 10.6667 21.1644C11.0561 21.1651 11.4335 21.0445 11.7333 20.8235C11.9021 20.699 12.0416 20.5462 12.1438 20.3737C12.2461 20.2013 12.3091 20.0126 12.3292 19.8184C12.3493 19.6243 12.3262 19.4285 12.2611 19.2423C12.1961 19.0561 12.0903 18.8832 11.95 18.7334L5.89999 12.2704H25.6667C26.1087 12.2704 26.5326 12.1142 26.8452 11.8362C27.1577 11.5582 27.3333 11.1812 27.3333 10.7881C27.3333 10.3949 27.1577 10.0179 26.8452 9.73989C26.5326 9.46189 26.1087 9.30572 25.6667 9.30572Z"
-                    fill="white" />
-                </svg>
-              </button>
-              <button type="button" class="first-slide-btn next">
-                <svg class="first-arrow-left" width="28" height="22" viewBox="0 0 28 22" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M25.6667 9.30572H5.89999L11.95 2.84274C12.2329 2.54002 12.369 2.14975 12.3284 1.75778C12.2877 1.36581 12.0737 1.00425 11.7333 0.752644C11.393 0.501035 10.9542 0.379985 10.5135 0.416124C10.0727 0.452263 9.66622 0.642631 9.38332 0.945348L1.04999 9.83936C0.993924 9.9101 0.943789 9.98442 0.89999 10.0617C0.89999 10.1358 0.89999 10.1803 0.783323 10.2544C0.707779 10.4244 0.668225 10.6053 0.666656 10.7881C0.668225 10.9708 0.707779 11.1517 0.783323 11.3217C0.783323 11.3958 0.783323 11.4403 0.89999 11.5144C0.943789 11.5917 0.993924 11.666 1.04999 11.7368L9.38332 20.6308C9.54003 20.7981 9.73626 20.9327 9.95807 21.0249C10.1799 21.1171 10.4218 21.1648 10.6667 21.1644C11.0561 21.1651 11.4335 21.0445 11.7333 20.8235C11.9021 20.699 12.0416 20.5462 12.1438 20.3737C12.2461 20.2013 12.3091 20.0126 12.3292 19.8184C12.3493 19.6243 12.3262 19.4285 12.2611 19.2423C12.1961 19.0561 12.0903 18.8832 11.95 18.7334L5.89999 12.2704H25.6667C26.1087 12.2704 26.5326 12.1142 26.8452 11.8362C27.1577 11.5582 27.3333 11.1812 27.3333 10.7881C27.3333 10.3949 27.1577 10.0179 26.8452 9.73989C26.5326 9.46189 26.1087 9.30572 25.6667 9.30572Z"
-                    fill="white" />
-                </svg>
-              </button>
-            </div>
-            <div class="slick-navigation">
-            </div>
-          </div>
-          <div class="button-block-mobile">
-            <a href="#about-company" class="header-btn">
-              дізнатись більше
+        </div>
+        <div class="header-wrapper">
+          <a class="header-logo" href="#">
+            <img
+              src="../img/logo/logo.svg"
+              alt="logo"
+              class="header-logo-img"
+            />
+          </a>
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-item">
+                <a href="/" class="header-link">головна</a>
+              </li>
+              <li class="header-item">
+                <a href="#wrapper" class="header-link">проєкти</a>
+              </li>
+              <li class="header-item">
+                <a href="#features" class="header-link">послуги</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-block-phone">
+            <a class="header-link-phone" href="tel:+380959428868">
+              <i class="ri-phone-line"></i>
+              <span class="header-link-icon-phone"></span>
+              +380959428868
+            </a>
+            <a class="header-link-phone" href="tel:+380977725838">
+              <i class="ri-phone-line"></i>
+              <span class="header-link-icon-phone"></span>
+              +380977725838
             </a>
           </div>
+          <button class="header-burger"><i class="ri-menu-line"></i></button>
         </div>
       </div>
-    </section>
-    <section class="our-features" id="about-company">
-      <div class="features-row">
-        <div class="features-img column-features">
-          <img src="images/ourfeatures.jpg" alt="kitchen">
-          <button type="button" class="features-btn reverb"> <a href="#collabs">гортай нижче</a></button>
+    </header>
+    <main>
+      <section class="first">
+        <div class="container first-container">
+          <div class="first-content">
+            <div class="left-section-header column">
+              <h1 class="first-title title">
+                БУДІВЕЛЬНА КОМПАНІЯ &nbsp;<span class="context-color"
+                  >BUDTEOS</span
+                >
+              </h1>
+              <p class="first-description description">
+                Будуй мрії з
+                <span class="context-color"
+                  >budteos - надійність та &nbsp; якість</span
+                >
+                на кожному кроці!
+              </p>
+              <div class="button-block">
+                <a href="#about-company" class="header-btn">
+                  дізнатись більше
+                </a>
+              </div>
+            </div>
+            <div class="slick-wrapper">
+              <div class="image-sec column">
+                <div class="slick-slider">
+                  <img
+                    src="./images/modern-house-pic.png"
+                    alt="house"
+                    class="header-img"
+                  />
+                  <img
+                    src="./images/IMG_2077.JPG"
+                    alt="house"
+                    class="header-img"
+                  />
+                  <img
+                    src="./images/IMG_2078.JPG"
+                    alt="house"
+                    class="header-img"
+                  />
+                </div>
+              </div>
+              <div class="slick-buttons">
+                <button type="button" class="first-slide-btn prev">
+                  <svg
+                    class="first-arrow-right"
+                    width="28"
+                    height="22"
+                    viewBox="0 0 28 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25.6667 9.30572H5.89999L11.95 2.84274C12.2329 2.54002 12.369 2.14975 12.3284 1.75778C12.2877 1.36581 12.0737 1.00425 11.7333 0.752644C11.393 0.501035 10.9542 0.379985 10.5135 0.416124C10.0727 0.452263 9.66622 0.642631 9.38332 0.945348L1.04999 9.83936C0.993924 9.9101 0.943789 9.98442 0.89999 10.0617C0.89999 10.1358 0.89999 10.1803 0.783323 10.2544C0.707779 10.4244 0.668225 10.6053 0.666656 10.7881C0.668225 10.9708 0.707779 11.1517 0.783323 11.3217C0.783323 11.3958 0.783323 11.4403 0.89999 11.5144C0.943789 11.5917 0.993924 11.666 1.04999 11.7368L9.38332 20.6308C9.54003 20.7981 9.73626 20.9327 9.95807 21.0249C10.1799 21.1171 10.4218 21.1648 10.6667 21.1644C11.0561 21.1651 11.4335 21.0445 11.7333 20.8235C11.9021 20.699 12.0416 20.5462 12.1438 20.3737C12.2461 20.2013 12.3091 20.0126 12.3292 19.8184C12.3493 19.6243 12.3262 19.4285 12.2611 19.2423C12.1961 19.0561 12.0903 18.8832 11.95 18.7334L5.89999 12.2704H25.6667C26.1087 12.2704 26.5326 12.1142 26.8452 11.8362C27.1577 11.5582 27.3333 11.1812 27.3333 10.7881C27.3333 10.3949 27.1577 10.0179 26.8452 9.73989C26.5326 9.46189 26.1087 9.30572 25.6667 9.30572Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <button type="button" class="first-slide-btn next">
+                  <svg
+                    class="first-arrow-left"
+                    width="28"
+                    height="22"
+                    viewBox="0 0 28 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25.6667 9.30572H5.89999L11.95 2.84274C12.2329 2.54002 12.369 2.14975 12.3284 1.75778C12.2877 1.36581 12.0737 1.00425 11.7333 0.752644C11.393 0.501035 10.9542 0.379985 10.5135 0.416124C10.0727 0.452263 9.66622 0.642631 9.38332 0.945348L1.04999 9.83936C0.993924 9.9101 0.943789 9.98442 0.89999 10.0617C0.89999 10.1358 0.89999 10.1803 0.783323 10.2544C0.707779 10.4244 0.668225 10.6053 0.666656 10.7881C0.668225 10.9708 0.707779 11.1517 0.783323 11.3217C0.783323 11.3958 0.783323 11.4403 0.89999 11.5144C0.943789 11.5917 0.993924 11.666 1.04999 11.7368L9.38332 20.6308C9.54003 20.7981 9.73626 20.9327 9.95807 21.0249C10.1799 21.1171 10.4218 21.1648 10.6667 21.1644C11.0561 21.1651 11.4335 21.0445 11.7333 20.8235C11.9021 20.699 12.0416 20.5462 12.1438 20.3737C12.2461 20.2013 12.3091 20.0126 12.3292 19.8184C12.3493 19.6243 12.3262 19.4285 12.2611 19.2423C12.1961 19.0561 12.0903 18.8832 11.95 18.7334L5.89999 12.2704H25.6667C26.1087 12.2704 26.5326 12.1142 26.8452 11.8362C27.1577 11.5582 27.3333 11.1812 27.3333 10.7881C27.3333 10.3949 27.1577 10.0179 26.8452 9.73989C26.5326 9.46189 26.1087 9.30572 25.6667 9.30572Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="slick-navigation"></div>
+            </div>
+            <div class="button-block-mobile">
+              <a href="#about-company" class="header-btn"> дізнатись більше </a>
+            </div>
+          </div>
         </div>
-        <div class="about-block column-features">
-          <h2 class="about-company">ПРО КОМПАНІЮ</h2>
-          <ul class="about-list">
+      </section>
+      <section class="our-features" id="about-company">
+        <div class="features-row">
+          <div class="features-img column-features">
+            <img src="images/ourfeatures.jpg" alt="kitchen" />
+            <button type="button" class="features-btn reverb">
+              <a href="#collabs">гортай нижче</a>
+            </button>
+          </div>
+          <div class="about-block column-features">
+            <h2 class="about-company">ПРО КОМПАНІЮ</h2>
+            <ul class="about-list">
+              <li>
+                <span class="numspan">15</span>
+                <p class="textspan">років на ринку</p>
+              </li>
+              <hr />
+              <li>
+                <span class="numspan">3</span>
+                <p class="textspan">роки гарантії</p>
+              </li>
+              <hr />
+              <li>
+                <span class="numspan">100+</span>
+                <p class="textspan">успішних проєктів</p>
+              </li>
+            </ul>
+            <button type="button" class="features-btn">
+              <a href="#collabs">гортай нижче</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="wework" id="features">
+        <h2 class="our-offers">наші послуги</h2>
+        <ul class="our-offers-list">
+          <div class="first-work-block-container">
             <li>
-              <span class="numspan">15</span>
-              <p class="textspan">років на ринку</p>
+              <div class="work-block" data-fancybox-trigger="gallery1">
+                <div style="display: none">
+                  <img
+                    src="images/buildings/buildings01.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings02.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings03.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings04.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings05.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings06.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings07.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings08.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings09.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings10.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings11.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings12.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings13.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings14.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings15.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings16.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings17.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings18.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings19.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings20.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings21.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings22.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings23.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings24.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings25.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings26.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings27.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings28.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings29.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings30.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings31.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings32.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings33.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings34.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings35.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                  <img
+                    src="images/buildings/buildings36.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery1"
+                  />
+                </div>
+                <img src="images/house.png" alt="house" />
+                <h3>будівництво будинків, офісів, котеджів</h3>
+              </div>
             </li>
-            <hr>
             <li>
-              <span class="numspan">3</span>
-              <p class="textspan">роки гарантії</p>
+              <div class="work-block" data-fancybox-trigger="gallery2">
+                <div style="display: none">
+                  <img
+                    src="images/brukivka/brukivka01.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  />
+                  <img
+                    src="images/brukivka/brukivka01.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka02.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka03.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka04.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka05.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka06.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka07.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka08.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka09.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka10.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka11.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka12.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka13.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka14.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka15.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka16.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka17.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka18.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka19.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  /><img
+                    src="images/brukivka/brukivka20.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery2"
+                  />
+                </div>
+                <img src="images/road.png" alt="road" />
+                <h3>продаж та укладання бруківки</h3>
+              </div>
             </li>
-            <hr>
             <li>
-              <span class="numspan">100+</span>
-              <p class="textspan">успішних проєктів</p>
+              <div class="work-block" data-fancybox-trigger="gallery3">
+                <div style="display: none">
+                  <img
+                    src="images/parkani/parkani01.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery3"
+                  /><img
+                    src="images/parkani/parkani02.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery3"
+                  /><img
+                    src="images/parkani/parkani03.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery3"
+                  /><img
+                    src="images/parkani/parkani04.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery3"
+                  /><img
+                    src="images/parkani/parkani05.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery3"
+                  />
+                </div>
+                <img src="images/fence.png" alt="fence" />
+                <h3>паркани та огорожі</h3>
+              </div>
+            </li>
+          </div>
+          <div class="second-work-block-container">
+            <li>
+              <div class="work-block" data-fancybox-trigger="gallery4">
+                <div style="display: none">
+                  <img
+                    src="images/dah/roof01.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery4"
+                  /><img
+                    src="images/dah/roof02.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery4"
+                  /><img
+                    src="images/dah/roof03.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery4"
+                  /><img
+                    src="images/dah/roof04.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery4"
+                  />
+                </div>
+                <img src="images/big-house.png" alt="house" />
+                <h3>дах під ключ</h3>
+              </div>
+            </li>
+            <li>
+              <div class="work-block" data-fancybox-trigger="gallery5">
+                <div style="display: none">
+                  <img
+                    src="images/remont/remont01.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  />
+                  <img
+                    src="images/remont/remont01.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont02.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont03.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont04.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont05.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont06.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont07.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont08.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont09.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont10.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont11.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont12.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont13.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont14.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont15.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont16.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont17.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont18.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont19.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont20.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont21.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont22.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont23.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont24.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont25.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont26.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont27.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont28.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont29.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont30.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont31.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont32.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont33.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont34.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont35.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont36.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont37.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont38.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont39.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont40.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont41.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  /><img
+                    src="images/remont/remont42.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery5"
+                  />
+                </div>
+                <img src="images/builder.png" alt="builder" />
+                <h3>ремонт під ключ</h3>
+              </div>
+            </li>
+            <li>
+              <div class="work-block" data-fancybox-trigger="gallery6">
+                <div style="display: none">
+                  <img
+                    src="images/buuldings/photo_1_2023-05-23_12-53-51.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery6"
+                  />
+                  <img
+                    src="images/buuldings/photo_2_2023-05-23_12-53-51.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery6"
+                  />
+                  <img
+                    src="images/buuldings/photo_3_2023-05-23_12-53-51.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery6"
+                  />
+                  <img
+                    src="images/buuldings/photo_4_2023-05-23_12-53-51.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery6"
+                  />
+                  <img
+                    src="images/buuldings/photo_5_2023-05-23_12-53-51.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery6"
+                  />
+                  <img
+                    src="images/buuldings/photo_6_2023-05-23_12-53-51.jpg"
+                    alt="будівля"
+                    data-fancybox="gallery6"
+                  />
+                </div>
+                <img src="images/delivery.png" alt="delivery truck" />
+                <h3>доставка матеріалів для будівництва</h3>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </section>
+      <section class="collabs" id="collabs">
+        <h2 class="h2-colab">з ким співпрацюємо?</h2>
+        <table class="collaborations">
+          <tr class="corner">
+            <td colspan="4">
+              <h4>бруківка</h4>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="images/miydvir.png" alt="мій двір" /></td>
+            <td><img src="images/ozon.png" alt="OZON" /></td>
+            <td><img src="images/garant.png" alt="Гарант+" /></td>
+            <td><img src="images/unibruk.png" alt="unibruk" /></td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <h4>ремонт</h4>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <img src="images/ceresit.png" alt="ceresit" />
+              <p class="des">усі види стяжки, клей, утеплення</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <h4>дахи та фасади</h4>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <img src="images/rockwool.png" alt="rockwool" />
+              <p class="des">утеплення дахів та фасадів мінватою</p>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section class="our-projects">
+        <div class="wrapper" id="wrapper">
+          <div class="wrap-img">
+            <img src="images/triangle.png" alt="triangle" class="triangle" />
+          </div>
+          <div class="wrap-text">
+            <h2>крайні проєкти</h2>
+          </div>
+          <div class="list-img">
+            <img
+              src="images/toilet1.png"
+              alt="дім"
+              class="list-img-slot slot1"
+            />
+            <img
+              src="images/bedroom1.png"
+              alt="дім"
+              class="list-img-slot slot2"
+            />
+            <img
+              src="images/kitchen1.png"
+              alt="дім"
+              class="list-img-slot slot3"
+            />
+            <img
+              src="images/house1.png"
+              alt="дім"
+              class="list-img-slot slot4"
+            />
+            <img
+              src="images/kitchen2.png"
+              alt="дім"
+              class="list-img-slot slot5"
+            />
+            <img
+              src="images/livingroom1.png"
+              alt="дім"
+              class="list-img-slot slot6"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="where-we-work">
+        <div class="container where-we-work">
+          <h2 class="title where-we-work-title">де працюємо?</h2>
+          <ul class="job-container">
+            <li class="job-slot">
+              <h3 class="job-h3">
+                <i class="ri-map-pin-2-line"></i>івано-франківськ <br />
+                (та його околиці)
+              </h3>
+            </li>
+            <li class="job-slot">
+              <h3 class="job-h3"><i class="ri-map-pin-2-line"></i>львів</h3>
+            </li>
+            <li class="job-slot">
+              <h3 class="job-h3"><i class="ri-map-pin-2-line"></i>буковель</h3>
             </li>
           </ul>
-          <button type="button" class="features-btn"> <a href="#collabs">гортай нижче</a></button>
         </div>
-      </div>
-    </section>
-    <section class="wework" id="features">
-      <h2 class="our-offers">наші послуги</h2>
-      <ul class="our-offers-list">
-        <div class="first-work-block-container">
-          <li>
-            <div class="work-block">
-              <img src="images/house.png" alt="house">
-              <h3>будівництво будинків, офісів, котеджів</h3>
-            </div>
-          </li>
-          <li>
-            <div class="work-block">
-              <img src="images/builder.png" alt="builder">
-              <h3>ремонт під ключ</h3>
-            </div>
-          </li>
-          <li>
-            <div class="work-block">
-              <img src="images/fence.png" alt="fence">
-              <h3>паркани та огорожі</h3>
-            </div>
-          </li>
+      </section>
+      <section class="questions">
+        <div class="container questions-container">
+          <div class="form-box">
+            <h2 class="form-box-text">є питання?</h2>
+            <form action="#" class="form" id="form">
+              <div class="input-wrapper">
+                <div class="input-error name" data-show="false">
+                  Недостатньо символів
+                </div>
+                <input
+                  type="text"
+                  placeholder="Ім'я"
+                  class="input name"
+                  name="name"
+                />
+              </div>
+              <div class="input-wrapper">
+                <div class="input-error phone" data-show="false">
+                  Неправильно набраний номер
+                </div>
+                <input
+                  type="tel"
+                  placeholder="Номер телефону"
+                  class="input tel"
+                  name="tel"
+                />
+              </div>
+              <button type="submit" class="input-btn modal-btn" onclick="main()">
+                залишити заявку
+              </button>
+            </form>
+          </div>
         </div>
-        <div class="second-work-block-container">
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <img src="images/logo.svg" alt="logo" class="footer-logo" />
+        <h2 class="footer-rights">© Компанія <span>BUDTEOS</span></h2>
+        <p class="reserved-rights">Всі права захищені</p>
+        <ul class="soc-media">
           <li>
-            <div class="work-block">
-              <img src="images/big-house.png" alt="house">
-              <h3>дах під ключ</h3>
-            </div>
+            <a
+              href="https://instagram.com/bud.teos?igshid=OGQ5ZDc2ODk2ZA=="
+              class="soc-media-text"
+              target="_blank"
+              ><i class="ri-instagram-fill"></i>наш інстаграм</a
+            >
           </li>
           <li>
-            <div class="work-block">
-              <img src="images/road.png" alt="road">
-              <h3>продаж та укладання бруківки</h3>
-            </div>
-          </li>
-          <li>
-            <div class="work-block">
-              <img src="images/delivery.png" alt="delivery truck">
-              <h3>доставка матеріалів для будівництва</h3>
-            </div>
-          </li>
-        </div>
-      </ul>
-    </section>
-    <section class="collabs" id="collabs">
-      <h2 class="h2-colab">з ким співпрацюємо?</h2>
-      <table class="collaborations">
-        <tr class="corner">
-          <td colspan="4">
-            <h4>бруківка</h4>
-          </td>
-        </tr>
-        <tr>
-          <td><img src="images/miydvir.png" alt="мій двір"></td>
-          <td><img src="images/ozon.png" alt="OZON"></td>
-          <td><img src="images/garant.png" alt="Гарант+"></td>
-          <td><img src="images/unibruk.png" alt="unibruk"></td>
-        </tr>
-        <tr>
-          <td colspan="4">
-            <h4>ремонт</h4>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="4"><img src="images/ceresit.png" alt="ceresit">
-            <p class="des">усі види стяжки, клей, утеплення</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="4">
-            <h4>дахи та фасади</h4>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="4"><img src="images/rockwool.png" alt="rockwool">
-            <p class="des">утеплення дахів та фасадів мінватою</p>
-          </td>
-        </tr>
-      </table>
-    </section>
-    <section class="our-projects">
-
-      <div class="wrapper" id="wrapper">
-        <div class="wrap-img"><img src="images/triangle.png" alt="triangle" class="triangle"></div>
-        <div class="wrap-text">
-          <h2>крайні проєкти</h2>
-        </div>
-        <div class="list-img">
-          <img src="images/toilet1.png" alt="дім" class="list-img-slot slot1">
-          <img src="images/bedroom1.png" alt="дім" class="list-img-slot slot2">
-          <img src="images/kitchen1.png" alt="дім" class="list-img-slot slot3">
-          <img src="images/house1.png" alt="дім" class="list-img-slot slot4">
-          <img src="images/kitchen2.png" alt="дім" class="list-img-slot slot5">
-          <img src="images/livingroom1.png" alt="дім" class="list-img-slot slot6">
-        </div>
-      </div>
-    </section>
-    <section class="where-we-work">
-      <div class="container where-we-work">
-        <h2 class="title where-we-work-title">де працюємо?</h2>
-        <ul class="job-container">
-          <li class="job-slot">
-            <h3 class="job-h3"><i class="ri-map-pin-2-line"></i>івано-франківськ <br> (та його околиці)</h3>
-          </li>
-          <li class="job-slot">
-            <h3 class="job-h3"><i class="ri-map-pin-2-line"></i>львів</h3>
-          </li>
-          <li class="job-slot">
-            <h3 class="job-h3"><i class="ri-map-pin-2-line"></i>буковель</h3>
+            <a
+              href="https://www.facebook.com/profile.php?id=100091811780705"
+              class="soc-media-text"
+              target="_blank"
+              ><i class="ri-facebook-circle-fill"></i>наш фейсбук</a
+            >
           </li>
         </ul>
       </div>
-    </section>
-    <section class="questions">
-      <div class="container questions-container">
-        <div class="form-box">
-          <h2 class="form-box-text">є питання?</h2>
-          <form action="#" class="form" id="form">
-            <div class="input-wrapper">
-              <div class="input-error name" data-show="false">Недостатньо символів</div>
-              <input type="text" placeholder="Ім'я" class="input name" name="name">
-            </div>
-            <div class="input-wrapper">
-              <div class="input-error phone" data-show="false">Неправильно набраний номер</div>
-              <input type="tel" placeholder="Номер телефону" class="input tel" name="tel">
-            </div>
-            <button type="submit" class="input-btn modal-btn">залишити заявку</button>
-          </form>
-        </div>
+    </footer>
+    <div id="ex1" class="modal">
+      <div class="modal-content">
+        <h3>ви залишили заявку!</h3>
+        <p>МИ ЗВ’яжемось з вами напротязі двох годин</p>
+        <a href="#" rel="modal:close" class="close-link">Закрити</a>
+        <img src="images/logo.svg" alt="logo" />
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container footer-container">
-      <img src="images/logo.svg" alt="logo" class="footer-logo">
-      <h2 class="footer-rights">© Компанія <span>BUDTEOS</span></h2>
-      <p class="reserved-rights">Всі права захищені</p>
-      <ul class="soc-media">
-        <li><a href="https://instagram.com/bud.teos?igshid=OGQ5ZDc2ODk2ZA==" class="soc-media-text" target="_blank"><i
-              class="ri-instagram-fill"></i>наш інстаграм</a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=100091811780705" class="soc-media-text" target="_blank"><i class="ri-facebook-circle-fill"></i>наш фейсбук</a>
-        </li>
-      </ul>
     </div>
-  </footer>
-  <div id="ex1" class="modal">
-    <div class="modal-content">
-      <h3>ви залишили заявку!</h3>
-      <p>МИ ЗВ’яжемось з вами напротязі двох годин</p>
-      <a href="#" rel="modal:close" class="close-link">Закрити</a>
-      <img src="images/logo.svg" alt="logo">
+
+    <div class="modal modal-block">
+      <img
+        src="images/buuldings/photo_1_2023-05-23_12-53-51.jpg"
+        alt="будівля"
+      />
     </div>
-  </div>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-  <script src="libs/inputmask.min.js"></script>
-  <script src="libs/just-validate.min.js"></script>
-  <script src="scripts/slider.js"></script>
-  <script src="scripts/validation.js"></script>
-  <script src="scripts/burger-menu.js"></script>
-  <script src="scripts/script.js"></script>
-</body>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="libs/inputmask.min.js"></script>
+    <script src="libs/just-validate.min.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/burger-menu.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/image-modal.js"></script>
+  </body>
 </html>
