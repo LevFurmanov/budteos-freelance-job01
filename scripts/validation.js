@@ -73,7 +73,5 @@ const showThanksModal = () => {
 const submitForm = (values) => {
   showThanksModal();
 
-  /**
-   * ТУТ ЛОГИКА ОТПРАВКИ ДАННЫХ ФОРМЫ
-   */
+  
 }
