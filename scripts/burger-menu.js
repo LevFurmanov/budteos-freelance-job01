@@ -1,5 +1,6 @@
 const btnBurger = document.querySelector('.header-burger');
 const btnBurgerMobile = document.querySelector('.header-burger-mobile');
+
 let menu = document.querySelector('.header-mobile-menu');
 
 btnBurger.addEventListener('click', () => {
@@ -11,3 +12,8 @@ btnBurger.addEventListener('click', () => {
 btnBurgerMobile.addEventListener('click', () => {
   menu.style.display = 'none';
 });
+
+function closeMenu(){
+  document.querySelector('.header-mobile-menu').style.display = 'none'
+  console.log('Menu closed')
+}
